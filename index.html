@@ -5,29 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
-    <title>Sign Up Today!</title>
+    <title>Gaming Cafe Sign Up</title>
+    <h1 class="title">Sign Up For Early Access To Our New Gaming Cafe!</h1>
 </head>
 <body>
     <div class="form-wrapper">
         <form>
             <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" placeholder="Lionel...">
-        </form>
-        <form>
+            <input required type="text" id="first_name" placeholder="First Name">
             <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" placeholder="Messi...">
-            <!--for and id should equal each other.-->
-        </form>
-        <form>
+            <input required type="text" id="last_name" placeholder="Last Name">
             <label for="email">Email:</label>
-            <input id="email" type="text" placeholder="football_fan.example.com">
-        </form>
-        <form>
+            <input required id="email" type="text" placeholder="gaming_fan@example.com">
             <label for="password">Password:</label>
-            <input type="text" id="password" class="error">
+            <input required type="password" id="password" class="error" placeholder="secret_password">
             <label for="confirm_password" class="error">Confirm Password:</label>
-            <input type="text" id="confirm_password">
+            <input required type="password" id="confirm_password" placeholder="secret_password">
+            <button type="submit">Create Account!</button>
+            <p class="p1">Already have an account? <span class="span-inline">Log in</span></p>
         </form>
+    </div>
+    <div class="img-wrapper">
+        <img src="PC-Bang-10.webp">
     </div>
 </body>
 </html>
